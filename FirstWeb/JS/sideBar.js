@@ -1,20 +1,22 @@
-let state = document.querySelector("#sidebar");
+const op_bt = document.querySelector("#sidebar");
+const nav_bar = document.querySelector("#nav");
+const close_bt = document.querySelector("#nav_bt_close");
 
 //sidebar의 동작을 담당하는 함수
-function SideBar() {
-  state.addEventListener("click", function () {
-    //default상태
-    if (state.ariaPressed === "false") {
-      state.setAttribute("aria-pressed", "true");
-      state.classList.add("active")
-      console.log(state.classList)
-    }
-    //sidebar가 열린 상태
-    else if (state.ariaPressed === "true") {
-      state.setAttribute("aria-pressed", "false");
-      state.classList.remove("active")
-      console.log(state.classList)
-    }
-  });
+function active_sideBar() {
+  op_bt.addEventListener("click", op_nav);
+  close_bt.addEventListener("click", cl_nav);
 }
-SideBar();
+
+function op_nav() {
+  op_bt.setAttribute("aria-pressed", "true");
+  nav_bar.classList.add("active");
+}
+
+function cl_nav() {
+  op_bt.setAttribute("aria-pressed", "false");
+  nav_bar.classList.remove("active");
+}
+
+
+active_sideBar();

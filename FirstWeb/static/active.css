@@ -1,0 +1,22 @@
+.nav_bt_close{
+  text-indent: -999px;
+  overflow: hidden;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-image: url(close_icon.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+.nav_bt_close:hover{
+  transform: scale(1.1);
+}
+
+
+
+
