@@ -1,72 +1,65 @@
-* {
-  margin: 0;
-  text-align: center;
-  font-family: "Dongle", sans-serif;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  padding: 3px;
-}
-
-/*a 태그들의 색상 및 데코레이션 설정*/
-.aLinkColor,
-.aLinkColor:hover {
-  color: black;
-  text-decoration: none;
-}
-
-/*header설정*/
-header {
-  top: 0;
-  position: sticky;
-  /*fixed를 사용하면 main에 header의 높이만큼 margin-top을 해줘야함*/
-  width: 100%;
-  height: 64px;
-  opacity: 0.8;
-  /*opacity는 요소를 투명도를 정할 수 있다*/
-  font-size: 15px;
-}
-.mainLogo {
-  font-size: 30px;
-}
-
-#logoBar {
-  width: 100%;
-  height: 100%;
-
+.flexRow{
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.hidden{
+  visibility: hidden;
+}
+
+.aTagColor{
+  color: black;
+  text-decoration: none;
+}
+.aTagColor:hover {
+  color:mediumturquoise
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1.25rem 2rem;
+  z-index: 10;
+  background-color: white;
+}
+.headerContent{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: 1.2rem 2rem;
+  width: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  background-color: white;
+
+}
+.headerTitle{
+  display: inline-block;
+}
+.headerTitle a{
+  font-size: 2rem;
+  
+}
+.headerNavMenu{
+  float: right;
+  padding-top: 18px;
+}
+.headerNavMenu ul{
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  list-style-type:none;
+  padding: 0 10px 0 10px;
+}
+ul.flexRow{
   justify-content: space-between;
 }
 
-/*사이드 nav바*/
-.sideMove {
-  transition: margin-left 0.5s;
-}
-.nav {
-  display: flex;
-  position: fixed;
-  /* visibility: hidden; */
-  height: 100%;
-  width: 0;
-  top: 0;
-  right: 0;
 
-  /*translate로 이동 거리 값을 지정하는데 지금은 내부 컨텐츠의 */
-  /*길이와 관계없이폭을 지정해야 하므로 효과를 주기위해 넣음*/
-  /*+값을 준 이유는 오른쪽에서 왼쪽으로 나와야 하므로 active에서 빼주면 원하는 효과로 나옴*/
-  transition: all 0.5s;
-  color: white;
-  background-color: blanchedalmond;
-  overflow-x: hidden;
-  z-index: 1;
+/*section, main*/
+.appWrap{
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
-/* .nav.active {
-  visibility: visible;
-  width: 25%;
-} */
-
-/*main*/
