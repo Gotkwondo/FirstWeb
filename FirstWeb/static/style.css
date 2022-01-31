@@ -63,3 +63,15 @@ ul.flexRow{
   padding-top: 150px;
   padding-bottom: 100px;
 }
+.sayHello{
+  padding-bottom: 70px;
+}
+.typeKo h1{
+  margin: 0;
+  padding-right: 10px;
+  border-right: 2px solid grey;
+}
+.typeEn h1{
+  margin: 0;
+  padding-left: 10px;
+}
