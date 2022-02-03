@@ -1,77 +1,123 @@
-.flexRow{
+.flexRow {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.hidden{
+.hidden {
   visibility: hidden;
 }
 
-.aTagColor{
+.aTagColor {
   color: black;
   text-decoration: none;
 }
 .aTagColor:hover {
-  color:mediumturquoise
+  color: mediumturquoise;
 }
-
-.header{
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+/*header*/
+.header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   padding: 1.25rem 2rem;
   z-index: 10;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
-.headerContent{
+.headerContent {
   padding-left: 2rem;
   padding-right: 2rem;
   padding: 1.2rem 2rem;
   width: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: bold;
-  background-color: white;
-
+  background-color: rgb(255, 255, 255);
 }
-.headerTitle{
+.headerTitle {
   display: inline-block;
 }
-.headerTitle a{
+.headerTitle a {
   font-size: 2rem;
-  
 }
-.headerNavMenu{
+.headerNavMenu {
   float: right;
   padding-top: 18px;
 }
-.headerNavMenu ul{
+.headerNavMenu ul {
   padding: 0;
   margin: 0;
 }
-ul li{
-  list-style-type:none;
+ul li {
+  list-style-type: none;
   padding: 0 10px 0 10px;
 }
-ul.flexRow{
+ul.flexRow {
   justify-content: space-between;
 }
 
-
 /*section, main*/
-.appWrap{
+.mainArticle,
+.mainPortfolio {
+  padding: 35px 0 35px 0;
+}
+h2.articleTitle {
+  font-size: 30px;
+}
+p.articleTitle {
+  font-size: 20px;
+}
+.appWrap {
   padding-top: 150px;
   padding-bottom: 100px;
 }
-.sayHello{
-  padding-bottom: 70px;
-}
-.typeKo h1{
+.typeKo h1 {
   margin: 0;
   padding-right: 10px;
   border-right: 2px solid grey;
 }
-.typeEn h1{
+.typeEn h1 {
   margin: 0;
   padding-left: 10px;
+}
+.portfolioUl {
+  padding: 10px 0 10px 0;
+  margin: 0;
+}
+.portfolioLi {
+  padding: 0;
+  display: block;
+  padding: 20px 0 20px 0;
+}
+.image img {
+  display: block;
+  border: 1px solid #dee2e6;
+  width: 100%;
+}
+.image {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  vertical-align: middle;
+}
+.inner {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 2em;
+}
+
+/*footer*/
+.footerUl {
+  padding: 0;
+  margin: 0;
+}
+.footerLi {
+  padding: 20px 0 20px 0;
+  text-align: center;
+  margin: 0 auto;
 }
