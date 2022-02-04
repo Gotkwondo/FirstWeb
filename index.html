@@ -26,13 +26,13 @@
       <div class="headerNavMenu flexRow">
         <ul class="flexRow">
           <li>
-            <a href="#" class="aTagColor">프로필</a>
+            <a href="#profileBt" class="aTagColor">프로필</a>
           </li>
           <li>
-            <a href="#" class="aTagColor">경력</a>
+            <a href="#portfolioBt" class="aTagColor">Portfolio</a>
           </li>
           <li>
-            <a href="#" class="aTagColor">Git</a>
+            <a id="linkBt" class="aTagColor">Git & Blog</a>
           </li>
           <!-- <li class="hidden">
             <a href="#" class=" aTagColor">메뉴</a>
@@ -43,18 +43,34 @@
   </header>
   <section class="appWrap border-bottom">
     <div class="mainWrap">
-      <div class="container">
+      <div>
+        <ul class="flexRow">
+          <li class="image">
+            <img src="static/test용.jpg" alt="">
+          </li>
+          <li class="image">
+            <img src="static/test용.jpg" alt="">
+          </li>
+          <li class="image">
+            <img src="static/test용.jpg" alt="">
+          </li>
+          <li class="image">
+            <img src="static/test용.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+      <div id="profile" class="container">
         <article class="mainArticle border-bottom">
           <div class="flexRow">
             <span class="typeKo">
               <h1>
-                안녕하세요<br>오주현입니다
+                안녕하세요.<br>오주현입니다.
               </h1>
             </span>
             <span class="typeEn">
               <h1>
-                Hello
-                <br>I'm Oh Ju Hyeon
+                Hello.
+                <br>I'm Oh Ju Hyeon.
               </h1>
             </span>
           </div>
@@ -76,14 +92,13 @@
               문제 해결을 위해 많은 설명서와 여러 자료들을 찾으며 어려움을 겪은 부분을
               확실하게 제 지식으로 만들었습니다. 이러한 과정을 겪으며 점점 제가 공부하는 분야에
               흥미를 갖게되며 더욱 다양한 기술과 참교자료를 통해 공부했습니다.
-              현제까지 공부한 내용을 다시 볼 수 있게 블로그("<a class="textLink" href="#">dd</a>")에 정리하고 있습니다.
+              현재까지 진행한 프로젝트의 과정을 다시 볼 수 있게 블로그("<a class="textLink aTagColor" href="https://58cjdcns99.tistory.com/">링크</a>")에 정리하고 있습니다.
             </dd>
           </dl>
         </article>
       </div>
-      <div class="container">
-        <article class="mainPortfolio">
-          <div>
+      <div id="portfolio" class="container">
+        <article class="mainPortfolio border-bottom">
             <header>
               <h2 class="articleTitle">Portfolio</h2>
               <p class="articleTitle">2022~현재</p>
@@ -93,7 +108,7 @@
                 <li class="portfolioLi border-bottom">
                   <article>
                     <a href="#" class="image">
-                      <img src="static/화면 캡처 2022-02-03 205137.jpg" alt="test용">
+                      <img src="static//test용.jpg" alt="test용">
                     </a>
                     <div class="inner">
                       <h4>프로젝트 이름</h4>
@@ -104,7 +119,7 @@
                 <li class="portfolioLi border-bottom">
                   <article>
                     <a href="#" class="image">
-                      <img src="static/화면 캡처 2022-02-03 205137.jpg" alt="test용">
+                      <img src="static/test용.jpg" alt="test용">
                     </a>
                     <div class="inner">
                       <h4>프로젝트 이름</h4>
@@ -115,7 +130,7 @@
                 <li class="portfolioLi">
                   <article>
                     <a href="#" class="image">
-                      <img src="static/화면 캡처 2022-02-03 205137.jpg" alt="test용">
+                      <img src="static/test용.jpg" alt="test용">
                     </a>
                     <div class="inner">
                       <h4>프로젝트 이름</h4>
@@ -125,10 +140,27 @@
                 </li>
             </div>
             </ul>
-          </div>
         </article>
       </div>
-    </div> 
+      <div id="link" class="container">
+        <article class="mainLink">
+          <ul class="linkUl flexRow">
+            <li class="linkLi">
+              <a class="aTagColor" href="https://github.com/Gotkwondo">
+                <img class="linkLogo" src="static/githubLogo.png" alt="github로고">
+                <p class="inner" href="https://github.com/Gotkwondo">Github</p>
+              </a>
+            </li>
+            <li class="linkLi">
+              <a class="aTagColor" href="https://58cjdcns99.tistory.com/">
+                <img class="linkLogo" src="static/tistoryLogo.svg" alt="tistoryLogo">
+                <p class="inner" >Tistory</p>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
   </section>
   <footer class="container">
     <ul class="footerUl flexRow">
@@ -138,7 +170,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="JS/sideBar.js"></script>
+  <script src="JS/scroll.js"></script>
   <script src="https://kit.fontawesome.com/c8349f7de1.js" crossorigin="anonymous"></script>
 </body>
 </html>

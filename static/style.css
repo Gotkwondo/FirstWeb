@@ -1,7 +1,12 @@
+*{
+  transition: all 0.5s;
+}
 .flexRow {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .hidden {
   visibility: hidden;
@@ -53,28 +58,37 @@ h4 {
   padding: 0;
   margin: 0;
 }
-ul li {
+li{
   list-style-type: none;
+}
+.flexRow ul li {
   padding: 0 10px 0 10px;
 }
 ul.flexRow {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /*section, main*/
 .mainArticle,
-.mainPortfolio {
+.mainPortfolio,
+.mainLink {
   padding: 35px 0 35px 0;
 }
+
 h2.articleTitle {
   font-size: 30px;
 }
 p.articleTitle {
   font-size: 20px;
 }
-.appWrap {
-  padding-top: 150px;
-  padding-bottom: 100px;
+.appWrap{
+  margin-top: 150px;
+}
+dd .aTagColor{
+  color:  blue;
+}
+dd .aTagColor :hover{
+  color: mintcream;
 }
 .typeKo h1 {
   margin: 0;
@@ -85,16 +99,21 @@ p.articleTitle {
   margin: 0;
   padding-left: 10px;
 }
-.portfolioUl {
+.portfolioUl, .linkUl {
   padding: 10px 0 10px 0;
   margin: 0;
 }
-.portfolioLi {
+.portfolioLi{
   padding: 0;
   display: block;
   padding: 20px 0 20px 0;
 }
 .image img {
+  display: block;
+  border: 1px;
+  width: 100%;
+}
+a.image img {
   display: block;
   border: 1px solid #dee2e6;
   width: 100%;
@@ -111,13 +130,28 @@ p.articleTitle {
   padding-left: 2em;
 }
 
+.linkLi{
+  padding: 0;
+  display: block;
+  padding: 20px 20px 20px 20px;
+}
+.flexRow .linkUl{
+  justify-content: space-around;
+}
+.linkLogo{
+  width: 80px;
+  height: 80px;
+}
+
 /*footer*/
-.footerUl {
+.flexRow.footerUl{
   padding: 0;
   margin: 0;
+  align-items: flex-start;
+  justify-content: left;
 }
 .footerLi {
-  padding: 20px 0 20px 0;
-  text-align: center;
-  margin: 0 auto;
+  padding: 20px 10px 20px 10px;
+  text-align: left;
+  margin: 0 ;
 }
